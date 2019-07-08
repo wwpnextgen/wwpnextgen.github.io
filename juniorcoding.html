@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<link rel = "stylesheet" href = "juniorcoding.css"></link>
+		<script src = "juniorcoding.js"></script>
+		<script>
+			function navStick(){
+				var menu = document.getElementById("menubar");
+				var stickCheck = 8;
+				var isStick = window.pageYOffset >= stickCheck;
+				if(isStick){
+					menu.classList.add("sticky");
+				}
+				else{
+					menu.classList.remove("sticky");
+				}
+				console.log(window.pageYOffset + " " + stickCheck);
+			}
+			window.onscroll = function() {navStick()};
+		</script>
+		<style>
+			.sticky{
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "menu" id = "menubar">
+			<center>
+				<a href = "#home">Home</a>
+				<a href = "#about">About Us</a>
+				<a href = "#founders">Our Founders</a>
+				<a href = "#contact">Contact Us</a>
+			</center>
+		</div>
+		<div id = "home" style = "background-color: white; height: 70%; width: 100%;">
+			<center>
+				<h1>Junior Coding League</h1>
+				<h3>The Programmers of Today Build the World of Tomorrow</h3>
+				<button class = "button button1">Our Locations</button>
+				<button class = "button button1">Who we are</button>
+				<button class = "button button1">Register With Us</button>
+				<br>
+				<br>
+				<br>
+				<br>
+				<video width = "50%" height = "50%" playsinline autoplay loop>
+					<source src = "https://brex.com/hero-video-home.mp4">
+				</video>
+			</center>
+		</div>
+		<br>
+		<br>
+		<div id="slideshow" style = "background-color: powderblue; height: 120%; width: 100%;">
+   			<center>
+				<img id = "slides" src = "https://cdn-images-1.medium.com/max/1600/0*4ty0Adbdg4dsVBo3.png" width = 1000vw height = 1000vw>
+				<br>
+				<br>
+				<h2>
+					Come meet with us at any of our locations....
+				</h2>
+			</center>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id = "about" style = "background-color: white;">
+			<center><h2>About Us</h2></center>
+			<table style="width:100%; padding: 5vw;">
+				<tr>
+					<td>
+						<center><img src = "https://cdn-images-1.medium.com/max/1600/0*4ty0Adbdg4dsVBo3.png" width = 500vw height = 1000vw></center>
+					</td>
+					<td>
+						<center><img src = "https://cdn-images-1.medium.com/max/1600/0*4ty0Adbdg4dsVBo3.png" width = 500vw height = 1000vw></center>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center><h3>Lorem Ipsum Dolor. We help kids by....</h3></center>
+					</td>
+					<td>
+						<center><h3>Lorem Ipsum Dolor. This is one of our methods...</h3></center>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id = "founders" style = "background-color: powderblue; height: 70%; width: 100%;">
+			<center>
+				<h2>
+					Meet the founders!
+				</h2>
+				<table>
+					<tr>
+						<td>
+							<center><img class = "profile" src = "https://scontent.fewr1-2.fna.fbcdn.net/v/t1.0-9/43328120_326405304783426_6472747243874025472_n.jpg?_nc_cat=105&_nc_oc=AQlG_gXzP-poBSXvBtawoq4YTf1kvyIuFmoTQBHnaYvAk-dcRTtm0zwfYVv2qgj3oo0&_nc_ht=scontent.fewr1-2.fna&oh=af5718bdb6a19f71ed0b8969690fb16b&oe=5DAA5C20" style = "height: 50%; width: 50%;"></center>
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h2>Archit Mehta</h2></center>
+						</td>
+						<td>
+							<center><h2>Aneesh Durai</h2></center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h3>Co-founder, President</h3></center>
+						</td>
+						<td>
+							<center><h3>Co-founder, President</h3></center>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: white;
+}
+h1{
+	font-size: 5vw;
+	font-family: Bookman Old Style;
+	background: -webkit-linear-gradient(gold, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h2{
+	font-size: 3vw;
+	font-family: Bookman Old Style;
+	background: -webkit-linear-gradient(#000428, #004e92);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h3{
+	font-size: 1vw;
+	font-family: Courier;
+	background: -webkit-linear-gradient(#36d1dc, #5b86e5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+div.menu{
+	background-color: #000000;
+	overflow: auto;
+	white-space: nowrap;
+	font-size: 1vw;
+	font-family: Bookman Old Style;
+}
+div.menu a{
+	display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        text-decoration: none;
+}
+div.menu a:hover{
+        background-color: #B2ACB8;
+	color: powderblue;
+}
+.profile{
+	border-radius: 50%;
+}
+.homeImg{
+	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg"); 
+}
+.button {
+        border: none;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1vw;
+	font-family: Courier;
+	border-radius: 15px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+}
+
+.button1 {
+        background-color: white; 
+        color: #4CAF50; 
+        border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+        background-color: #4CAF50;
+        color: white;
+}
