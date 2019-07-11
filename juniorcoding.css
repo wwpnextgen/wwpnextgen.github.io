@@ -14,14 +14,14 @@ h1{
 h2{
 	font-size: 3vw;
 	font-family: Bookman Old Style;
-	background: -webkit-linear-gradient(#000428, #004e92);
+	background: -webkit-linear-gradient(purple, blue);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 h3{
 	font-size: 1vw;
 	font-family: Courier;
-	background: -webkit-linear-gradient(#36d1dc, #5b86e5);
+	background: -webkit-linear-gradient(gold, red);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
