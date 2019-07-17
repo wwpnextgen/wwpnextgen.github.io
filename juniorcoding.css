@@ -20,7 +20,7 @@ h2{
 }
 h3{
 	font-size: 1vw;
-	font-family: Courier;
+	font-family: 'Roboto Slab', serif;
 	background: -webkit-linear-gradient(gold, red);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
