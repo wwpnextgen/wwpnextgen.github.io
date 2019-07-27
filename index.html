@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Junior Coding League</title>
-		<link rel = "shortcut icon" type = "image/png" href = "gearicon.jpg">
+		<link rel = "shortcut icon" type = "image/png" href = "icon.png">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1">		
 
@@ -9,31 +9,9 @@
 
 		<link rel = "stylesheet" href = "juniorcoding.css"></link>
 		<script src = "juniorcoding.js"></script>
-		<script>
-			function navStick(){
-				var menu = document.getElementById("menubar");
-				var stickCheck = 8;
-				var isStick = window.pageYOffset >= stickCheck;
-				if(isStick){
-					menu.classList.add("sticky");
-				}
-				else{
-					menu.classList.remove("sticky");
-				}
-				console.log(window.pageYOffset + " " + stickCheck);
-			}
-			window.onscroll = function() {navStick()};
-		</script>
-		<style>
-			.sticky{
-				position: fixed;
-				top: 0;
-				width: 100%;
-			}
-		</style>
 	</head>
 	<body>
-		<div class = "menu" id = "menubar">
+		<div class = "menu sticky" id = "menubar" style = "width: 100vw; height: 10vh;">
 			<center>
 				<a href = "#home">Home</a>
 				<a href = "#about">About Us</a>
@@ -41,35 +19,35 @@
 				<a href = "#contact">Contact Us</a>
 			</center>
 		</div>
-		<div id = "home" style = "background-color: white; height: 70vh; width: 100vw;">
+		<div style = "height: 10vh; width: 100vw;">
+		</div>
+		<div id = "home" style = "background-color: white; height: 70vh; width: 100vw;" class = "appear">
 			<center>
 				<h1>Junior Coding League</h1>
 				<h3>The Programmers of Today Build the World of Tomorrow</h3>
 				<a href = "#slideshow"><button class = "button button1">Our Locations</button></a>
 				<a href = "#founders"><button class = "button button1">Who we are</button></a>
 				<a href = "#tutor"><button class = "button button1">Register With Us</button></a>
-				<br>
-				<br>
-				<br>
-				<br>
+				
+				<div style = "height: 5vh; width: 100vw;">
+				</div>
+				
 				<video style = "width:30vw;height:30vh;" playsinline autoplay loop>
 					<source src = "https://funtechsummercamps.com/vid/camp-types/hero/java-coder-level-1.mp4">
 				</video>
 			</center>
 		</div>
-		<br>
-		<br>
+		
+		<div style = "height: 5vh; width: 100vw;">
+		</div>
+
 		<div id="slideshow" class = "subdiv" style = "height: 100vh; width: 100vw;">
    			<center>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<img id = "slides" src = "https://www.techwillsaveus.com/wp-content/uploads/2017/11/STEM-blog-image.jpg" style = "width: 50vw; height: 50vh;">
-				<br>
-				<br>
+				<div style = "height: 5vh; width: 100vw;">
+				</div>
+				<img class = "appearInf" id = "slides" src = "https://www.techwillsaveus.com/wp-content/uploads/2017/11/STEM-blog-image.jpg" style = "width: 50vw; height: 50vh;">
+				<div style = "height: 5vh; width: 100vw;">
+				</div>
 				<h2>
 					Come meet with us at any of our locations....
 				</h2>
@@ -81,9 +59,9 @@
 		<br>
 		<br>
 		<br>
-		<div id = "about" style = "background-color: white;">
+		<div id = "about" style = "background-color: white; height: 60vh; width: 100vw;">
 			<center><h2>About Us</h2></center>
-			<center><table style="width:50%; padding: 100px;">
+			<center><table style="width:50vw; padding: 100px;">
 				<tr>
 					<td>
 						<center><img src = "https://www.techwillsaveus.com/wp-content/uploads/2017/11/STEM-blog-image.jpg" style = "width: 30vw; height: 30vh;"></center>
@@ -102,6 +80,54 @@
 				</tr>
 			</table></center>
 		</div>
+
+		<div style = "height: 15vh;width:100vw;">
+		</div>
+
+		<div id = "diagram" style = "height:30vh;width:100vw">
+			<center>
+				<h2>How Does it Work?</h2>
+				<table style = "width: 70vw;">
+				<tr>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/find-user-male.png">
+					</th>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/create-new.png">
+					</th>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/robot.png">
+					</th>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/refresh.png">
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h3>
+							Junior Coding League finds able volunteers through our screening process.
+						</h3>
+					</th>
+					<th>
+						<h3>
+							Our dedicated volunteers come up with a lesson plan that allows for creative exploration.
+						</h3>
+					</th>
+					<th>
+						<h3>
+							Students create applications and machines to solve problems in their communities.
+						</h3>
+					</th>
+					<th>
+						<h3>
+							Students deploy their solutions into the real world, and the process repeats!
+						</h3>
+					</th>
+				</tr>
+				</table>
+			</center>
+		</div>
+
 		<div id = "founders" style = "background-color: powderblue; height: 70vh; width: 100vw;">
 			<center>
 				<h2>
@@ -146,10 +172,12 @@
 				<button class = "button button1">submit</button>
 			</center>
 		</div>
-		<div id = "tutor">
+		<div id = "tutor" style = "width: 100vw; height: 50vh;">
 			<center>
 				<h2>Want to join as a tutor?</h2>
 				<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdLlcMT8C9KRXpj54Alkgr8qnMcRAXeVlTSZp1iyXn9K4imhA/viewform"><button class = "button button1">Click Here to Register as a Tutor!</button></a>
+				<div style = "height: 2vh;">
+				</div>
 			</center>
 		</div>
 	</body>
