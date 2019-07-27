@@ -26,22 +26,20 @@ h3{
 	-webkit-text-fill-color: transparent;
 }
 div.menu{
-	background-color: #000000;
-	overflow: auto;
-	white-space: nowrap;
-	font-size: 1vw;
-	font-family: Bookman Old Style;
+	background-color: orange;
+	overflow: none;
 }
 div.menu a{
 	display: inline-block;
         color: white;
         text-align: center;
-        padding: 30px;
+        padding: 2vw;
         text-decoration: none;
+	font-family: Bookman Old Style;
+	font-size: 2vh;
 }
 div.menu a:hover{
-        background-color: #B2ACB8;
-	color: powderblue;
+	color: red;
 }
 .profile{
 	border-radius: 50%;
@@ -83,4 +81,40 @@ input[type=text] {
 	border: none;
 	background-color: #3CBC8D;
 	color: white;
+}
+@keyframes fadein{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+@-webkit-keyframes fadein{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+@keyframes fadeout{
+	from{opacity: 1}
+	to{opacity: 0}
+}
+@-webkit-keyframes fadein{
+	from{opacity: 1}
+	to{opacity: 0}
+}
+.appear{
+	-webkit-animation: fadein 1s;
+	animation: fadein 1s;
+}
+.disappear{
+	-webkit-animation: fadeout 2s;
+	animation: fadeout 2s;
+}
+.hidden{
+	opacity: 0;
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+.appearInf{
+	-webkit-animation: fadeout 2s infinite;
+	animation: fadeout 2s infinite;
 }
