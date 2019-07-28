@@ -124,3 +124,7 @@ input[type=text] {
 *{
 	margin: 0;
 }
+section{
+	display: inline-block;
+	width: 100vw;
+}
