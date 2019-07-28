@@ -2,7 +2,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	background-color: white;
+	overflow-x: hidden;
 }
 h1{
 	font-size: 5vw;
@@ -25,11 +25,11 @@ h3{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-div.menu{
+.menu{
 	background-color: orange;
-	overflow: none;
+	width: 101vw;
 }
-div.menu a{
+.menu a{
 	display: inline-block;
         color: white;
         text-align: center;
@@ -38,7 +38,7 @@ div.menu a{
 	font-family: Bookman Old Style;
 	font-size: 2vh;
 }
-div.menu a:hover{
+.menu a:hover{
 	color: red;
 }
 .profile{
@@ -52,7 +52,7 @@ div.menu a:hover{
         padding: 16px 32px;
         text-align: center;
         display: inline-block;
-        font-size: 1vw;
+        font-size: 2vh;
 	font-family: Courier;
 	border-radius: 15px;
         margin: 4px 2px;
@@ -69,8 +69,9 @@ div.menu a:hover{
         background-color: #4CAF50;
         color: white;
 }
-.subdiv{
+.subsection{
 	background-color: #F8F8F8;
+	width: 100vw;
 }
 input[type=text] {
 	width: 15vw;
@@ -117,4 +118,7 @@ input[type=text] {
 .appearInf{
 	-webkit-animation: fadeout 2s infinite;
 	animation: fadeout 2s infinite;
+}
+*{
+	margin: 0;
 }
