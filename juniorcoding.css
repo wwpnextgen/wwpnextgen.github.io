@@ -5,21 +5,21 @@ body{
 	overflow-x: hidden;
 }
 h1{
-	font-size: 5vw;
+	font-size: 10vh;
 	font-family: Bookman Old Style;
 	background: -webkit-linear-gradient(gold, red);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 h2{
-	font-size: 3vw;
+	font-size: 6vh;
 	font-family: Bookman Old Style;
 	background: -webkit-linear-gradient(purple, blue);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 h3{
-	font-size: 1vw;
+	font-size: 2vh;
 	font-family: 'Roboto Slab', serif;
 	background: -webkit-linear-gradient(gold, red);
 	-webkit-background-clip: text;
@@ -43,6 +43,8 @@ h3{
 }
 .profile{
 	border-radius: 50%;
+	width: 15vw;
+	height:30vh;
 }
 .homeImg{
 	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg"); 
