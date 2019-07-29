@@ -5,25 +5,19 @@ body{
 	overflow-x: hidden;
 }
 h1{
-	font-size: 10vh;
-	font-family: Bookman Old Style;
-	background: -webkit-linear-gradient(gold, red);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-size: 10em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #bf4aa8;
 }
 h2{
-	font-size: 6vh;
+	font-size: 6em;
 	font-family: Bookman Old Style;
-	background: -webkit-linear-gradient(purple, blue);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #bf4aa8
 }
 h3{
-	font-size: 2vh;
+	font-size: 2em;
 	font-family: 'Roboto Slab', serif;
-	background: -webkit-linear-gradient(gold, red);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: white;
 }
 .menu{
 	background-color: orange;
@@ -43,8 +37,8 @@ h3{
 }
 .profile{
 	border-radius: 50%;
-	width: 15vw;
-	height:30vh;
+	width: 30vh;
+	height: 30vh;
 }
 .homeImg{
 	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg"); 
@@ -63,16 +57,16 @@ h3{
 }
 
 .button1 {
-        background-color: white; 
-        color: #4CAF50; 
+        background-color: #4CAF50; 
+        color: white; 
         border: 2px solid #4CAF50;
 }
 .button1:hover {
-        background-color: #4CAF50;
-        color: white;
+        background-color: white;
+        color: #4CAF50;
 }
 .subsection{
-	background-color: #F8F8F8;
+	background-color: #63e5f2;
 	width: 100vw;
 }
 input[type=text] {
@@ -102,12 +96,12 @@ input[type=text] {
 	to{opacity: 0}
 }
 .appear{
-	-webkit-animation: fadein 1s;
+	-webkit-animation: fadein 6s;
 	animation: fadein 1s;
 }
 .disappear{
-	-webkit-animation: fadeout 2s;
-	animation: fadeout 2s;
+	-webkit-animation: fadeout 6s;
+	animation: fadeout 6s;
 }
 .hidden{
 	opacity: 0;
@@ -118,8 +112,8 @@ input[type=text] {
 	width: 100vw;
 }
 .appearInf{
-	-webkit-animation: fadeout 2s infinite;
-	animation: fadeout 2s infinite;
+	-webkit-animation: fadeout 6s infinite;
+	animation: fadeout 6s infinite;
 }
 *{
 	margin: 0;
@@ -127,4 +121,5 @@ input[type=text] {
 section{
 	display: inline-block;
 	width: 100vw;
+	background-color: #51D0DE;
 }
