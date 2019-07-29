@@ -11,59 +11,64 @@ h1{
 }
 h2{
 	font-size: 6vh;
-	font-family: Bookman Old Style;
-	color: #bf4aa8
+	font-family: 'Josefin Sans', sans-serif;
+	color: #000080;
 }
 h3{
 	font-size: 3vh;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
 .menu{
 	background-color: orange;
-	
 }
 .menu a{
 	display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 2vw;
-        text-decoration: none;
-	font-family: Bookman Old Style;
-	font-size: 2vh;
+  color: white;
+  text-align: center;
+  padding: 2vw;
+  text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+  font-size: 2vh;
 }
 .menu a:hover{
 	color: red;
 }
 .profile{
 	border-radius: 50%;
-	width: 30vh;
-	height: 30vh;
+	width: 25vh;
+	height: 25vh;
 }
 .homeImg{
-	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg"); 
+	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg");
 }
 .button {
-        border: none;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 2vh;
-	font-family: Courier;
-	border-radius: 15px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .button1 {
-        background-color: #4CAF50; 
-        color: white; 
-        border: 2px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+	border-radius: 15px;
 }
 .button1:hover {
         background-color: white;
         color: #4CAF50;
+}
+.joinButton{
+	color: white;
+}
+.joinButton:hover {
+	opacity: 0.7;
 }
 .subsection{
 	background-color: #63e5f2;
