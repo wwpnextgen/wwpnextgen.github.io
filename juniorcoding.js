@@ -51,7 +51,7 @@ function init(){
 	}
 }
 
-window.setInterval(nextSlide, 2000);
+window.setInterval(nextSlide, 6000);
 
 /*window.addEventListener("scroll",
 	function(){
