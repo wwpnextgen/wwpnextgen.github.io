@@ -9,8 +9,8 @@ imgArray[1].classList.add("fadein");
 
 function nextSlide(){
 	var img = document.getElementById("slides");
-	var element = "slides";	
-	
+	var element = "slides";
+
 	for(var i = 0; i < imgArray.length; i++){
 		if(imgArray[i].src == img.src){
             		if(i === imgArray.length - 1){
@@ -27,7 +27,7 @@ function nextSlide(){
 
 function jumpIn(x){
 	var bounding = x.getBoundingClientRect();
-	
+
 	if (
 	bounding.top >= 0 &&
 	bounding.left >= 0 &&
@@ -53,11 +53,16 @@ function init(){
 
 window.setInterval(nextSlide, 6000);
 
-/*window.addEventListener("scroll",
+window.addEventListener("scroll",
 	function(){
-		var list = document.body.getElementsByTagName("div");
-		for(var i = 0; i < list.length; i++){
-			console.log(list[i].classList);
-			jumpIn(list[i]);
-		}
-	});*/
+			if(window.pageYOffset > 0){
+				document.getElementById("menubar").classList.add("secondTransition");
+				document.getElementById("menubar").classList.remove("firstTransition");
+				document.getElementById("menubar").style.backgroundColor= "orange";
+			}
+			else{
+				document.getElementById("menubar").classList.add("firstTransition");
+				document.getElementById("menubar").classList.remove("secondTransition");
+				document.getElementById("menubar").style.backgroundColor= "#51D0DE";
+			}
+		});
