@@ -25,7 +25,6 @@ h4{
 	color: white;
 }
 .menu{
-	background-color: orange;
 }
 .menu a{
 	display: inline-block;
@@ -38,6 +37,23 @@ h4{
 }
 .menu a:hover{
 	color: red;
+}
+.menu2{
+		background-color: blue;
+}
+@-webkit-keyframes browse{
+	from{background-color: orange;}
+	to{background-color: #51D0DE;}
+}
+@-webkit-keyframes resting{
+	from{background-color: #51D0DE;}
+	to{background-color: orange;}
+}
+.firstTransition{
+	-webkit-animation: browse 2s;
+}
+.secondTransition{
+	-webkit-animation: resting 2s;
 }
 .profile{
 	border-radius: 50%;
