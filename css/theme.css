@@ -375,7 +375,9 @@ cite {
 }
 /*************************/
 
-
+*{
+	word-wrap: break-word;
+}
 
 
 /* Customization Boostrap Menu */
