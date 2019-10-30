@@ -378,6 +378,8 @@ cite {
 *{
 	word-wrap: break-word;
 }
+.top-buffer { margin-top:50px; }
+
 
 
 /* Customization Boostrap Menu */
